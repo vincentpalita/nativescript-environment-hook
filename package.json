@@ -1,0 +1,32 @@
+{
+  "name": "nativescript-environment-hook",
+  "version": "1.0.0",
+  "description": "Set environment info to json",
+  "nativescript": {
+    "hooks": [
+      {
+        "type": "before-prepare",
+        "script": "lib/before-prepare.js",
+        "inject": true
+      }
+    ]
+  },
+  "scripts": {
+    "postinstall": "node postinstall.js",
+    "preuninstall": "node preuninstall.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nativescript",
+    "hooks",
+    "hook",
+    "build",
+    "release",
+    "info"
+  ],
+  "author": "@vincentpalita",
+  "license": "BSD-4-Clause",
+  "dependencies": {
+    "nativescript-hook": "^0.2.1"
+  }
+}
